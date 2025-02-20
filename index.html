@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu Apartamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Container Geral -->
+ <div class="container">
+   <!--Cabeçalho-->
+   <div class="header">
+     <h3>Vilela Imobiliária</h3>
+     <p class="slogan">As melhores opções, para todos os estilos.</p>
+    </div>
+
+    <!-- Container do Formulário -->
+    <div class="form-container">
+        <div class="form-header">
+            <p>CADASTRO</p>
+        </div>
+
+        <div class="form-body">
+            <h1 class="form-title">Venda fácil o seu apartamento!</h1>
+         <p class="form-p">
+            Venda seu imóvel de forma rápida, fácil e segura. Anuncie aqui e encontre o comprador ideal.
+         </p>
+         <br>
+
+
+         <form>
+  <!--Título do Anúncio-->
+          <div class="box-input">
+            <label for="title">Título do Anúncio <span class="required field">*</span></label>
+
+            <input type="text"
+             name="title" 
+             id="title"
+             class="block"
+             placeholder="Digite um título para o seu anúncio"
+             minlength="1"
+             maxlength="100"
+             required>
+
+          </div>  
+
+ <!--Status-->         
+        <div class="box-input">
+            <p>Status: <span class= "required field"> * </span></p>
+
+            <input type="radio" name="gear" id="new">
+            <label for="new">Novo</label>
+
+            <input type="radio" name="gear" id="used">
+            <label for="used">Usado</label>
+        </div>    
+        
+<!--Preço-->
+         <div class="box-input">
+            <label for="price">Preço  <span class="required field">*</span></label>
+
+            <input type="number" 
+            name="price" 
+            id="price" 
+            class="block" 
+            placeholder="Defina o preço"
+            required />
+         </div>
+
+<!-- Descrição -->
+         <div class="box-input">
+            <label for="description">Descrição:  <span class="required field">*</span></label>
+
+            <textarea name="description" id="description" class="block" placeholder="Aqui você coloca os detalhes do seu apartamento."></textarea>
+         </div>
+
+<!-- Localização -->
+ <h2 class="localization">Localização</h2>
+<!-- Endereço -->
+         <div class="box-input">
+            <label for="address"> Endereço:  <span class="required field">*</span></label>
+
+            <input type="text" 
+            name="address" 
+            id="address" 
+            class="block" 
+            placeholder="Digite o endereço e número onde se localiza o apartamento."
+            required />
+         </div>
+
+<!-- Nome do Bairro -->
+         <div class="box-input">
+            <label for="neighborhood"> Bairro: <span class="required field">*</span></label>
+
+            <input type="text" 
+            name="neighborhood" 
+            id="neighborhood" 
+            class="block" 
+            placeholder="Digite o nome do bairro onde se localiza o apartamento."
+            required />
+         </div>
+
+<!-- Cidade -->       
+         <div class="box-input">
+            <label for="city"> Cidade: <span class="required field">*</span></label>
+
+            <input type="text" 
+            name="city" 
+            id="city" 
+            class="block" 
+            placeholder="Digite o nome da cidade onde se localiza o apartamento."
+            required />
+         </div>
+
+<!-- Estado -->       
+         <div class="box-input">
+            <label for="state"> Estado: <span class="required field">*</span></label>
+
+            <input type="text" 
+            name="state" 
+            id="state" 
+            class="block" 
+            placeholder="Digite o nome do estado onde se localiza o apartamento."
+            required />
+         </div>
+
+<!-- Ponto de Referência -->       
+<div class="box-input">
+    <label for="state"> Ponto de referência: <span class="required field">*</span></label>
+
+    <input type="text" 
+    name="state" 
+    id="state" 
+    class="block" 
+    placeholder="Digite o nome do estado onde se localiza o apartamento."
+    required />
+ </div>
+
+<!-- Características do Imóvel -->
+ <h2 class="characteristics">Características do Apartamento</h2>
+<!-- Área Total -->
+         <div class="box-input">
+            <label for="total-area"> Digite a área do apartamento em m²:  <span class="required field">*</span></label>
+
+            <input type="number" 
+            name="total-area" 
+            id="total-area" 
+            class="block" 
+            placeholder="Digite a área total do apartamento em m²."
+            required />
+         </div>
+
+<!-- Quantidade de Quartos -->
+        <div class="box-input">
+           <label for="room"> Quantidade de quartos:  <span class="required field">*</span></label>
+
+          <input type="number" 
+           name="room" 
+           id="room" 
+           class="block" 
+           placeholder="Digite a quantidade de quartos no imóvel."
+           required />
+        </div>
+
+<!-- Quantidade de Banheiros -->
+        <div class="box-input">
+           <label for="bathroom"> Quantidade de banheiros:  <span class="required field">*</span></label>
+
+          <input type="number" 
+           name="bathroom" 
+           id="bathroom" 
+           class="block" 
+           placeholder="Digite a quantidade de banheiros no imóvel."
+           required />
+        </div>
+
+<!-- Andar -->
+<div class="box-input">
+    <label for="walk"> Andar do apartamento:  <span class="required field">*</span></label>
+
+   <input type="number" 
+    name="walk" 
+    id="walk" 
+    class="block" 
+    placeholder="Digite o número do andar em que se localiza o apartamento."
+    required />
+ </div>
+
+<!-- Caixas de Seleção -->
+         <div class="optional-box">
+            <p class="comodidades">Comodidades: <span class="required field">*</span></p>
+
+            <ul class="optional-list">
+                <li>
+                    <input type="checkbox" id="suite" name="optional[]" value="suite">
+
+                    <label for="suite">Suíte</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="garage" name="optional[]" value="garage">
+
+                    <label for="garage">Garagem</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="pool" name="optional[]" value="pool">
+
+                    <label for="pool">Piscina</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="academy" name="optional[]" value="academy">
+
+                    <label for="academy">Academia</label>
+                </li>
+
+
+
+            </ul>
+
+
+         </div>
+
+<!--Caixas de Seleção 2 -->
+         <div class="optional-box">
+            
+            <ul class="optional-list">
+                <li>
+                    <input type="checkbox" id="party-hall" name="optional[]" value="party-hall">
+
+                    <label for="party-hall">Salão de Festas</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="soccer" name="optional[]" value="soccer">
+
+                    <label for="soccer">Quadra de Futebol</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="furniture" name="optional[]" value="furniture">
+
+                    <label for="furniture">Mobília</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="balcony" name="optional[]" value="balcony">
+
+                    <label for="balcony">Varanda</label>
+                </li>
+
+            </ul>
+        </div>
+
+ <!--Fotos do Apartamento-->
+  <div class="box-input">
+    <p class="photo">Fotos do Apartamento: <span class="required field">*</span></p>
+    <input type="file" multiple  accept="image/png, image/jpg" id="image" name="image" required>
+  </div>
+
+<!--Botão de envio-->
+  <input type="submit" value="Enviar" class="btn-submit">
+
+        </form>
+    </div> <!--Formulário-->
+  </div> <!--Container do Formulário-->
+ </div> <!-- Container Geral -->
+</body>
+</html>
